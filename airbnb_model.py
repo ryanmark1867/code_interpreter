@@ -46,4 +46,4 @@ model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy']
 
 # Train the model
 model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=10, batch_size=32)
-print("average price is: ",average_price)
+print("average_price is: ",average_price)
