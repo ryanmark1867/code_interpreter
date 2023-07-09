@@ -10,5 +10,7 @@ In Google Cloud Shell, exercise the result of using [code interpreter](https://o
 import pandas as pd
 data = pd.read_csv('AB_NYC_2019.csv')
 ```
-
+Also, results from two other experiments that didn't generate working code:
+- Same as above, but asking for a PyTorch model - generates [code that is missing any data handling](https://github.com/ryanmark1867/code_interpreter/blob/master/airbnb_model_pytorch.py)
+- Asking for a Keras model for the [Kuala Lumpur real estate dataset](https://www.kaggle.com/datasets/dragonduck/property-listings-in-kuala-lumpur) - generates [code that handles both data preparation and model training](https://github.com/ryanmark1867/code_interpreter/blob/master/kl_model.py), but data preparation code generates an error because it does not handle conversion of currency value strings correctly
 
