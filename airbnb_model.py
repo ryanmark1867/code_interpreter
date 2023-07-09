@@ -1,6 +1,8 @@
-# code interpreter output for prompt
+# code interpreter output for prompt:
+#
 # share code to train a Keras model on this dataset where the trained model would be able to predict whether a 
 # given listing would have a price above or below the average price
+#
 # based on CSV file at https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data
 import numpy as np
 
@@ -46,4 +48,6 @@ model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy']
 
 # Train the model
 model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=10, batch_size=32)
+
+# NEWLY ADDED POST CODE INTERPRETER OUTPUT
 print("average_price is: ",average_price)
